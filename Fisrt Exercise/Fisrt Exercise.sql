@@ -11,3 +11,7 @@ use store;
  -- 4
  select * from customers where last_name = 'Nahidi';
  select first_name, province from customers where last_name = 'Nahidi';
+ -- 5
+ select first_name, last_name, province
+ from customers
+ where province = 'Tehran'; -- first_name= Sara	  last_name = Sari	 province = Tehran
