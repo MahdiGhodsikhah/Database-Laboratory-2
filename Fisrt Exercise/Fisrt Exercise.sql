@@ -1,9 +1,11 @@
 use store;
 
 -- 1
- select name, unit_price_after_discount, unit_price from products;
+ select name, unit_price_after_discount, unit_price 
+ from products;
  -- 2
- select unit_price_after_discount, unit_price, product_id from products;
+ select unit_price_after_discount, unit_price, product_id 
+ from products;
  -- 3
  select first_name, last_name 
  from customers
@@ -32,3 +34,13 @@ FROM products;
 -- قیمت اولیه و قیمت پس از تخفیف برابر است = (product_id = 1 و name = iPhone 16) _ (product_id = 3 و name = Cheetoz)
 -- قیمت پس از تخفیف از قیمت اولیه بیشتر است = (product_id = 10 و name = Wrong Price)
 -- هر دو قیمت ثبت نشده‌اند = (product_id = 7 و name = Black wood desk)
+-- 9
+select first_name, last_name
+from customers
+where province = 'Tehran';
+
+SELECT first_name, last_name
+FROM customers
+WHERE last_name = 'Sari';
+-- بله خروجی یکسان هست
+-- کوئری اول تغییر می کنه چون کوئری اول تمام مشتری ها رو نمایش میده که استان شون تهران هست
