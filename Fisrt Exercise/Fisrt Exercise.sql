@@ -26,3 +26,9 @@ WHERE last_name = 'Isfahan';-- صورت سوال
 SELECT first_name, last_name
 FROM customers
 WHERE province = 'Isfahan';-- جواب
+-- 8
+SELECT product_id, name, unit_price, unit_price_after_discount
+FROM products;
+-- قیمت اولیه و قیمت پس از تخفیف برابر است = (product_id = 1 و name = iPhone 16) _ (product_id = 3 و name = Cheetoz)
+-- قیمت پس از تخفیف از قیمت اولیه بیشتر است = (product_id = 10 و name = Wrong Price)
+-- هر دو قیمت ثبت نشده‌اند = (product_id = 7 و name = Black wood desk)
