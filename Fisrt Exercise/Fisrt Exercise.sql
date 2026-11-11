@@ -54,3 +54,12 @@ FROM customers
 WHERE last_name = 'Nahidi';
 -- Ana Nahidi توی هردو وجود داره
 -- Ali Alavi فقط در فهرست اصفهان هست
+-- 11
+SELECT *
+FROM customers
+WHERE province = 'Shiraz';
+
+SELECT first_name, last_name, province
+FROM customers
+WHERE province = 'Shiraz';
+-- چون توی هردو کوئری مشتری رو میخواد که استانش شیراز هست تفاوت فقط توی تعداد ستون ها هست
