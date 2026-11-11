@@ -15,3 +15,7 @@ use store;
  select first_name, last_name, province
  from customers
  where province = 'Tehran'; -- first_name= Sara	  last_name = Sari	 province = Tehran
+ -- 6
+ select * from products;
+ select name from products;-- تعداد ردیف های هردو کوئری یکسان هست چون هردو از جدول محصولات اطلاعاتشون رو گرفتن و شرطی بیان نشده که فیلتری صورت بگیره تا تعداد ردیف ها کمتر بشن
+ 
