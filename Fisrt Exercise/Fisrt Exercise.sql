@@ -44,3 +44,13 @@ FROM customers
 WHERE last_name = 'Sari';
 -- بله خروجی یکسان هست
 -- کوئری اول تغییر می کنه چون کوئری اول تمام مشتری ها رو نمایش میده که استان شون تهران هست
+-- 10
+SELECT first_name, last_name
+FROM customers
+WHERE province = 'Isfahan';
+
+SELECT first_name, last_name
+FROM customers
+WHERE last_name = 'Nahidi';
+-- Ana Nahidi توی هردو وجود داره
+-- Ali Alavi فقط در فهرست اصفهان هست
