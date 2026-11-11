@@ -18,4 +18,11 @@ use store;
  -- 6
  select * from products;
  select name from products;-- تعداد ردیف های هردو کوئری یکسان هست چون هردو از جدول محصولات اطلاعاتشون رو گرفتن و شرطی بیان نشده که فیلتری صورت بگیره تا تعداد ردیف ها کمتر بشن
- 
+ -- 7
+SELECT *
+FROM customers
+WHERE last_name = 'Isfahan';-- صورت سوال
+
+SELECT first_name, last_name
+FROM customers
+WHERE province = 'Isfahan';-- جواب
