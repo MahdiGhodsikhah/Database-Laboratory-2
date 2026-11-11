@@ -63,3 +63,9 @@ SELECT first_name, last_name, province
 FROM customers
 WHERE province = 'Shiraz';
 -- چون توی هردو کوئری مشتری رو میخواد که استانش شیراز هست تفاوت فقط توی تعداد ستون ها هست
+-- 12
+SELECT name, unit_price, unit_price_after_discount, product_id
+FROM products;
+-- product_id 2 ( unit_price = 16000000 ___ unit_price_after_discount = 15500000)
+-- قیمت بعد از تخفیف کمتر هست
+-- چون سوال گفته بدون تغییر تعداد ردیف‌های خروجی کوئری باز نویسه بشه برای همین از where استفاده نکردم
